@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@500;600&family=Josefin+Sans:wght@400;700&display=swap');
+:root{
+    --white:#fff;
+    --black:#000;
+    --cores:#471ce3;
+    --verde:#0d6759;
+    --roxo:#2a044a;
+    --red:#af0b0b;
+
+}
+.light-thema{
+    background-color: var(--white);
+    color: var(--black);
+    --bg:var(--verde);
+    --link:var(--roxo);
+    --menu:var(--white);
+}
+.dark-thema{
+    background-color: var(--black);
+    color: var(--white);
+    --bg:var(--cores);
+    --link:var(--red)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.topo{
+    background-color: var(--bg);
+    width: 100%;
+    padding: 20px 0;
+    
+}
+.nav{
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.nav a{
+    text-decoration: none;
+
+    color:var(--menu);
+    margin: 0 10px;
+}
+.nav a:hover{
+  padding-bottom: 2px;
+  color:chartreuse;
+  border-bottom: 1px solid chartreuse ;
+}
+.banner img{
+    width: 100%;
+}
+.center{
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.center h1{
+    font-size: 40px;
+    margin: 30px 0;
+    text-align: center;
+}
+.center p{
+    font-size: 20px;
+    line-height: 40px;
+    margin: 40px 10px;
+}
+.imagen {
+    display: flex;
+    overflow-x: scroll;
+}
+.imagen img{
+      
+    margin: 10px 20px;
+    width: 300px;
+    box-shadow: 10px 10px 10px rgb(61, 61, 61);
+}
+.cores{
+    padding: 50px;
+    background-color: rgb(243, 239, 239);
+    display: flex;
+   
+    justify-content: center;
+}
+.botao-cor{
+    margin:60px;
+}
+.red, .black, .white{
+    margin:20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: none;
+}
+.red{
+    background-color: rgb(231, 15, 15);
+    color: #fff;
+}
+.black{
+    background-color: #000;
+    color: #fff;
+}
+.white{
+    background-color: #fff;
+}
+.carros{
+    object-fit: contain;
+    width: 400px;
+}
+.red, .black, .white{
+  cursor: pointer;
+  transition-duration: 3s, 1s;
+ 
+}
+.red:hover{
+  background-image:  radial-gradient(#f14242, #ff0410, rgba(58, 16, 16));
+box-shadow: 0px 0px 30px 15px rgba(241, 51, 3, 0.7);
+}
+.black:hover{
+  background-image:  radial-gradient(#363535, #1b1b1b, rgb(0, 0, 0));
+box-shadow: 0px 0px 30px 15px rgb(107, 107, 107);
+}
+.white:hover{
+  background-image:  radial-gradient(#ffffff, #ccc9c9, rgb(136, 136, 136));
+box-shadow: 0px 0px 30px 15px rgb(107, 107, 107);
+}
+/*##################################################*/
+/*Galeria DE Imagens box light*/ 
+
+
+#box, #box2, #box3, #box4 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #box:hover {opacity: 0.9;}
+  
+  /* The Modal (background) */
+  .modal, .modal2, .modal3, .modal4 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content, .modal-content2, .modal-content3, .modal-content4 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption, #caption2, #caption3, #caption4 {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, .modal-content2, .modal-content3, .modal-content4, #caption, #caption2, #caption3, #caption4 {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close, .close2,  .close3,  .close4 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 100px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close2:hover, 
+  .close3:hover,
+  .close4:hover,
+  .close:focus, 
+  .close2:focus, 
+  .close3:focus,
+  .close4:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  #galeria, #uncharted, #telefone, #superman{
+    cursor: pointer;
+  }
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+  /**##########################################**/
+  /*   Fim da galeria boxlight**/
+
+  .menu-base{
+     padding: 25px;
+    width: 100%;
+    margin: 60px 0;
+    background-color: var(--verde);
+  }
+  .nav2{
+      width: 100%;
+      max-width: 900px;
+      margin:0 auto;
+      font-size: 20px;
+  }
+  .nav2 a{
+    text-transform: uppercase;
+    margin: 0 20px;
+    color: rgb(10, 9, 9);
+    text-decoration: none;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 15px;
+  }
+  .frame{
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    width: 700px;
+    height: 500px;
+    overflow: hidden;
+ 
+    padding: 10px;
+  }
+  .responsive-iframe {
+    position: absolute;
+    max-width: 700px;
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
